@@ -2417,7 +2417,7 @@ $(document).on(&quot;keyup&quot;, function (e) {
 體力 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$energy&quot;&gt;&lt;/meter&gt; $energy&lt;br&gt; 
 認知 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$memo&quot;&gt;&lt;/meter&gt; $memo&lt;br&gt; 
 好感 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$love&quot;&gt;&lt;/meter&gt; $love&lt;br&gt; 
-性慾 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$xingfen&quot;&gt;&lt;/meter&gt; $xingfen&lt;br&gt;
+色色 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$xingfen&quot;&gt;&lt;/meter&gt; $xingfen&lt;br&gt;
 &lt;&lt;xinwidget&gt;&gt;</tw-passagedata><tw-passagedata pid="127" name="Start" tags="nobr" position="1600,200" size="200,200">&lt;img src=&quot;https://images.plurk.com/7B9SX4GSD2gevZuzGEhln2.png&quot;&gt;
 /*遊戲開始主頁不能標noreturn標籤，相關語法都會失效，如果返回失效，那就F5看看有沒有return跑出來記得要刪乾淨*/
 &lt;br&gt;
@@ -4303,7 +4303,18 @@ $lovetalk
 &lt;&lt;link &quot;刪除所有相片&quot;&gt;&gt;
     &lt;&lt;run setup.resetAchievements()&gt;&gt;
     &lt;&lt;goto &quot;Achievements&quot;&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;/link&gt;&gt;｜&lt;&lt;button &quot;查看破關提示&quot;&gt;&gt;
+	&lt;&lt;run Dialog.setup(&quot;紙條&quot;)&gt;&gt;
+	&lt;&lt;run Dialog.wiki(&quot;【流浪者夢工廠結局攻略】&lt;br&gt;
+ED1：未滿足以下任何條件&lt;br&gt;
+ED2：好感90+認知90以上，持有教科書、去教令院上課14次&lt;br&gt;
+ED3：好感90+認知90以上，比大小贏20次+有神秘藥水&lt;br&gt;
+ED4：好感90+認知90以上，販賣40杯飲料&lt;br&gt;
+ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&gt;
+&lt;br&gt;
+要補結局的話，重要物品建議一輪只拿一種比較不會有衝突&lt;br&gt;&quot;)&gt;&gt;
+	&lt;&lt;run Dialog.open()&gt;&gt;
+&lt;&lt;/button&gt;&gt;
 &lt;table&gt;
     &lt;tr&gt;
         &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
@@ -4379,12 +4390,13 @@ $lovetalk
        &lt;/tr&gt;
 &lt;/table&gt;</tw-passagedata><tw-passagedata pid="197" name="點擊寶箱" tags="nobr" position="1300,100" size="100,100">&lt;&lt;set $clickCount-=10&gt;&gt;&lt;&lt;set $chest +=1&gt;&gt;
           &lt;&lt;set $randomNumber to random(4)&gt;&gt;          
+          
           &lt;&lt;if $randomNumber is 0&gt;&gt;          
           &lt;&lt;set $gold +=1000&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
           妳得到了1000摩拉。
           &lt;&lt;/if&gt;&gt;
-          
+              
           &lt;&lt;if $randomNumber is 1&gt;&gt;
           &lt;&lt;set $gold +=500&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
