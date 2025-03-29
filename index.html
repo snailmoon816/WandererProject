@@ -104,7 +104,12 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="WandererFactory" startnode="127" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="09b58bdf-b669-4039-bbbf-ab3cce57a58e" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*表格樣式*/
+	<tw-storydata name="WandererFactory" startnode="127" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="09b58bdf-b669-4039-bbbf-ab3cce57a58e" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*不顯示左上角的標題-會影響存檔*/
+#story-title {
+	display: none;
+}
+
+/*表格樣式*/
 table {  
     border-collapse: collapse; /* 讓邊框合併，避免雙重線條 */
     width:100%; /* 表格寬度設為 80%，可自行調整 */
@@ -531,7 +536,22 @@ ul.simple-inventory-list{margin:0 auto;padding:0}.simple-inventory-listing{list-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*這一段時帶頭像的對話方塊*/
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">//改網頁標題
+$(document).on(':passagerender', function () {
+	document.title = "流浪者夢工廠";
+});
+
+// SugarCube 設定 favicon
+$(document).ready(function () {
+	var link = document.createElement("link");
+	link.rel = "icon";
+	link.type = "image/png";
+	link.href = "https://images.plurk.com/13tJmYJDrAgLn7AhMwp1b3.png "; // 換成妳自己的圖示網址
+	document.head.appendChild(link);
+});
+
+
+  /*這一段時帶頭像的對話方塊*/
 Macro.add('speech', {
 	tags     : null,
 	handler  : function () {
@@ -1978,7 +1998,7 @@ B站 熔岩泡芙
 
 &lt;&lt;widget &quot;readwidget&quot;&gt;&gt;/*閱讀反應-最多4次*/
 &lt;&lt;set $love +=5&gt;&gt;
-&lt;&lt;set $memo +=5&gt;&gt;
+&lt;&lt;set $memo +=2&gt;&gt;
 &lt;&lt;set $energy-=5&gt;&gt;
 &lt;&lt;/widget&gt;&gt;
 
@@ -2419,7 +2439,7 @@ $(document).on(&quot;keyup&quot;, function (e) {
 　&lt;a href=&quot;https://forms.gle/5FbjZ5nsA2N7d8NGA&quot; target=&quot;_blank&quot;&gt;心得/bug回報表單&lt;/a&gt;&lt;br&gt;
 　聯絡信箱：snailmoon816@gmail.com&lt;br&gt;
 ▋流浪者夢工廠©2025 紋字雛型@蝸牛月&lt;br&gt;
-▋特別感謝：熔岩泡芙的twine模板/Degrees of Lewdity靈感啟發/幫忙測試的朋友&lt;br&gt;
+▋特別感謝：熔岩泡芙的twine模板/dol靈感發想/幫忙測試的朋友&lt;br&gt;
 ▋發布時間：2025.04.01｜最後更新：2025.04.01&lt;br&gt;
 &lt;hr&gt;
 &lt;&lt;set $password to &quot;0816&quot;&gt;&gt;
