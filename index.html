@@ -1540,7 +1540,7 @@ $mcl:「身上錢不夠」 &lt;&lt;/if&gt;&gt;
 
 [[返回|$return]]
 
-</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,325" size="200,200">測試版：2025.03.30.1511 $closeed </tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,300" size="200,200">測試版：2025.03.30.1524 $closeed </tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
 &lt;b&gt;這是一個簡單功能的範本，我沒放多少東西，
 特殊片段：你不一定都要有，可以選擇使用
 StoryInit片段相當於一個預載入的資料庫
@@ -2355,23 +2355,23 @@ $(document).on(&quot;keyup&quot;, function (e) {
      &lt;/tr&gt;
        
      &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;if $book30 &gt;=20&gt;&gt;&lt;y1&gt;書中自有黃金屋&lt;/y1&gt;&lt;&lt;else&gt;&gt;●●●●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;if $book30 &gt;=20&gt;&gt;&lt;y2&gt;書中自有黃金屋&lt;/y2&gt;&lt;&lt;else&gt;&gt;●●●●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
     &lt;td&gt;&lt;&lt;if $book30 &gt;=20&gt;&gt;✅已完成&lt;&lt;else&gt;&gt;未完成&lt;&lt;/if&gt;&gt;&lt;/td&gt;
    &lt;td&gt;在智慧宮讀完20本書&lt;/td&gt;
      &lt;/tr&gt;
        
      &lt;tr&gt;
      &lt;td&gt;3&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;if $gold &gt;=100000 &gt;&gt;&lt;y2&gt;財富自由&lt;/y2&gt;&lt;&lt;else&gt;&gt;●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;if $gold &gt;=100000 &gt;&gt;&lt;y1&gt;財富自由&lt;/y1&gt;&lt;&lt;else&gt;&gt;●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
     &lt;td&gt;&lt;&lt;if $gold &gt;=100000 &gt;&gt;✅已完成&lt;&lt;else&gt;&gt;未完成&lt;&lt;/if&gt;&gt;&lt;/td&gt;
    &lt;td&gt;賺到100000摩拉&lt;/td&gt;
      &lt;/tr&gt;
      
      &lt;tr&gt;
      &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;if $school14 &gt;=14&gt;&gt;&lt;b2&gt;全勤獎&lt;/b2&gt;&lt;&lt;else&gt;&gt;●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;if $school14 &gt;=14&gt;&gt;&lt;g1&gt;全勤獎&lt;/g1&gt;&lt;&lt;else&gt;&gt;●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
     &lt;td&gt;&lt;&lt;if $school14 &gt;=14&gt;&gt;✅已完成&lt;&lt;else&gt;&gt;未完成&lt;&lt;/if&gt;&gt;&lt;/td&gt;
-   &lt;td&gt;教令院上課累計14天&lt;/td&gt;
+   &lt;td&gt;教令院上課累計14次&lt;/td&gt;
      &lt;/tr&gt;     
      
           &lt;tr&gt;
@@ -2383,7 +2383,7 @@ $(document).on(&quot;keyup&quot;, function (e) {
          
      &lt;tr&gt;
      &lt;td&gt;6&lt;/td&gt;
-    &lt;td&gt;&lt;&lt;if $days &gt;=100&gt;&gt;&lt;g1&gt;妳怎麼還在這&lt;/g1&gt;&lt;&lt;else&gt;&gt;●●●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;&lt;if $days &gt;=100&gt;&gt;&lt;b2&gt;妳怎麼還在這&lt;/b2&gt;&lt;&lt;else&gt;&gt;●●●●●●&lt;&lt;/if&gt;&gt;&lt;/td&gt;
     &lt;td&gt;&lt;&lt;if $days &gt;=100&gt;&gt;✅已完成&lt;&lt;else&gt;&gt;未完成&lt;&lt;/if&gt;&gt;&lt;/td&gt;
    &lt;td&gt;遊玩達到100天&lt;/td&gt;
      &lt;/tr&gt;
@@ -4330,8 +4330,8 @@ $lovetalk
     /* 從最嚴格的條件開始檢查 */
     &lt;&lt;if $love &gt; 90 &amp;&amp; $memo &gt; 90 &amp;&amp; $canr18 &gt;=1 &gt;&gt;
         &lt;&lt;goto &quot;Ending5&quot;&gt;&gt; /*隱藏結局*/
-    &lt;&lt;elseif $love &gt; 90 &amp;&amp; $memo &gt; 90 &amp;&amp; $sell10 &gt;=40 &gt;&gt;
-     &lt;&lt;goto &quot;Ending4&quot;&gt;&gt;  /*賣40杯飲料*/
+    &lt;&lt;elseif $love &gt; 90 &amp;&amp; $memo &gt; 90 &amp;&amp; $sell10 &gt;=14 &gt;&gt;
+     &lt;&lt;goto &quot;Ending4&quot;&gt;&gt;  /*賣14杯飲料*/
     &lt;&lt;elseif $love &gt; 90 &amp;&amp; $memo &gt; 90 &amp;&amp; $playerScore &gt;=20 &amp;&amp; $catwater &gt;=1&gt;&gt;
      &lt;&lt;goto &quot;Ending3&quot;&gt;&gt; /*比大小贏他20次*/
     &lt;&lt;elseif $love &gt; 90 &amp;&amp; $memo &gt; 90 &amp;&amp;  $school14 &gt;=14 &amp;&amp; $unifrom &gt;=1&gt;&gt;
@@ -4352,7 +4352,7 @@ $lovetalk
 ED1：未滿足以下任何條件&lt;br&gt;
 ED2：好感90+認知90以上，持有教科書、去教令院上課14次&lt;br&gt;
 ED3：好感90+認知90以上，比大小贏20次+有神秘藥水&lt;br&gt;
-ED4：好感90+認知90以上，販賣40杯飲料&lt;br&gt;
+ED4：好感90+認知90以上，販賣14杯飲料&lt;br&gt;
 ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&gt;
 &lt;br&gt;
 要補結局的話，重要物品建議一輪只拿一種比較不會有衝突&lt;br&gt;&quot;)&gt;&gt;
@@ -4581,47 +4581,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;&lt;run setup.unlockAchievement(&quot;ending4&quot;)&gt;&gt;
 &lt;&lt;run setup.unlockAchievement(&quot;ending5&quot;)&gt;&gt;
 
-[[ch01]]</tw-passagedata><tw-passagedata pid="201" name="CustomSavesMenu" tags="" position="1425,750" size="100,100">&lt;&lt;set _saves = Save.get()&gt;&gt;
-
-&lt;h2&gt;存档&lt;/h2&gt;
-
-&lt;h3&gt;浏览器存档&lt;/h3&gt;
-&lt;&lt;for _i, _save range _saves.slots&gt;&gt;
-    &lt;&lt;if _save !== null&gt;&gt;
-        &lt;div&gt;
-            存档槽 ${_i + 1} - 回合 ${_save.metadata.turn || &quot;未知&quot;} - ${_save.date.toLocaleString(&quot;zh-CN&quot;)}
-            &lt;&lt;button &quot;加载&quot;&gt;&gt;
-                &lt;&lt;run Save.slots.load(_i)&gt;&gt;
-            &lt;&lt;/button&gt;&gt;
-            &lt;&lt;button &quot;删除&quot;&gt;&gt;
-                &lt;&lt;run Save.slots.delete(_i)&gt;&gt;
-                &lt;&lt;refresh&gt;&gt;
-            &lt;&lt;/button&gt;&gt;
-        &lt;/div&gt;
-    &lt;&lt;else&gt;&gt;
-        &lt;div&gt;存档槽 ${_i + 1} - 空&lt;/div&gt;
-    &lt;&lt;/if&gt;&gt;
-&lt;&lt;/for&gt;&gt;
-
-&lt;h3&gt;操作&lt;/h3&gt;
-&lt;&lt;button &quot;导出...&quot;&gt;&gt;
-    &lt;&lt;run Save.export()&gt;&gt;
-&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;导入...&quot;&gt;&gt;
-    &lt;&lt;run Save.import()&gt;&gt;
-&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;清除&quot;&gt;&gt;
-    &lt;&lt;run Save.slots.clear()&gt;&gt;
-    &lt;&lt;refresh&gt;&gt;
-&lt;&lt;/button&gt;&gt;
-
-&lt;h3&gt;本地存档&lt;/h3&gt;
-&lt;&lt;button &quot;保存...&quot;&gt;&gt;
-    &lt;&lt;run Save.disk.save()&gt;&gt;
-&lt;&lt;/button&gt;&gt;
-&lt;&lt;button &quot;加载...&quot;&gt;&gt;
-    &lt;&lt;run Save.disk.load()&gt;&gt;
-&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="202" name="R18" tags="nobr" position="2300,900" size="100,100">/*強制色色*/
+[[ch01]]</tw-passagedata><tw-passagedata pid="201" name="R18" tags="nobr" position="2300,900" size="100,100">/*強制色色*/
 &lt;img src=&quot;https://images.plurk.com/45kkN3vRosSsr1P4K8frqG.gif &quot;&gt;&lt;br&gt;
 &lt;&lt;sexr18widget&gt;&gt;&lt;hr&gt;
 &lt;&lt;if $xingfen &gt;=120&gt;&gt;&lt;br&gt;
@@ -4664,7 +4624,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;&lt;/if&gt;&gt;
 &lt;br&gt;
 
-🚪[[掙扎離開|塵歌壺]]</tw-passagedata><tw-passagedata pid="203" name="讓他射" tags="nobr" position="2200,1000" size="100,100">&lt;img src=&quot;https://images.plurk.com/45kkN3vRosSsr1P4K8frqG.gif &quot;&gt;&lt;br&gt;
+🚪[[掙扎離開|塵歌壺]]</tw-passagedata><tw-passagedata pid="202" name="讓他射" tags="nobr" position="2200,1000" size="100,100">&lt;img src=&quot;https://images.plurk.com/45kkN3vRosSsr1P4K8frqG.gif &quot;&gt;&lt;br&gt;
 &lt;&lt;sexr18widget&gt;&gt;&lt;br&gt;
 &lt;hr&gt;
 &lt;br&gt;
@@ -4673,7 +4633,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 流浪者下身如打樁般不停搗弄著花徑，愛液幾乎浸透妳們的結合處，沿著腿縫滑下，流浪者身上的神紋閃爍明滅，在射精前與妳接吻，將愛與欲一起吞嚥入腹。&lt;br&gt;
 &lt;br&gt;
 &lt;br&gt;
-💕[[高潮|射精]]</tw-passagedata><tw-passagedata pid="204" name="插入" tags="nobr" position="2350,1100" size="100,100">&lt;img src=&quot;https://images.plurk.com/45kkN3vRosSsr1P4K8frqG.gif &quot;&gt;&lt;br&gt;
+💕[[高潮|射精]]</tw-passagedata><tw-passagedata pid="203" name="插入" tags="nobr" position="2350,1100" size="100,100">&lt;img src=&quot;https://images.plurk.com/45kkN3vRosSsr1P4K8frqG.gif &quot;&gt;&lt;br&gt;
 &lt;&lt;sexr18widget&gt;&gt;&lt;br&gt;
 &lt;hr&gt;
 &lt;&lt;if $xinchoice &lt;=4&gt;&gt;
@@ -4707,7 +4667,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;&lt;if $xingfen &gt;=100&gt;&gt;
 💕[[任由他抽插|讓他射]]&lt;br&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="205" name="調情接吻" tags="nobr" position="2500,1100" size="100,100">&lt;&lt;sexr18widget&gt;&gt;
+</tw-passagedata><tw-passagedata pid="204" name="調情接吻" tags="nobr" position="2500,1100" size="100,100">&lt;&lt;sexr18widget&gt;&gt;
 &lt;hr&gt;
 &lt;br&gt;
 &lt;br&gt;
@@ -4739,7 +4699,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;&lt;if $xingfen &gt;=60&gt;&gt;
 &lt;&lt;if $xinchoice != 5&gt;&gt;💕[[主動迎合|插入][$xinchoice to 5]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $xinchoice != 6&gt;&gt;💕[[磨蹭後撤|插入][$xinchoice to 6]]&lt;br&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="206" name="射精" tags="nobr" position="2100,1000" size="100,100">&lt;&lt;set $xingfen to 10&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="205" name="射精" tags="nobr" position="2100,1000" size="100,100">&lt;&lt;set $xingfen to 10&gt;&gt;
 &lt;&lt;set $xinchoice to 0&gt;&gt;
 眼前炸出一片白光，暖流蔓延至四肢百骸，與他結合的充實感讓妳幾度暈眩落淚。&lt;br&gt;
 &lt;br&gt;
@@ -4750,7 +4710,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;br&gt;
 &lt;br&gt;
 💙[[穿好衣服|塵歌壺]]
-</tw-passagedata><tw-passagedata pid="207" name="上課撩他" tags="nobr" position="2900,675" size="100,100">&lt;&lt;set $lovetalk to [&quot;妳偷偷捏了捏他的臉頰。&lt;br&gt;流浪者開眼看著妳，「……住手。」&lt;br&gt;&quot;, &quot;妳的手輕輕撩過他的手背。&lt;br&gt;他輕哼，「別以為我沒注意到，妳的手在做什麼？」&lt;br&gt;&quot;,&quot;妳趁他不注意，親了他一下。&lt;br&gt;他睜開眼，「？……我沒在打瞌睡，別給偷親我找理由。」&lt;br&gt;&quot;].random()&gt;&gt;&lt;br&gt;
+</tw-passagedata><tw-passagedata pid="206" name="上課撩他" tags="nobr" position="2900,675" size="100,100">&lt;&lt;set $lovetalk to [&quot;妳偷偷捏了捏他的臉頰。&lt;br&gt;流浪者開眼看著妳，「……住手。」&lt;br&gt;&quot;, &quot;妳的手輕輕撩過他的手背。&lt;br&gt;他輕哼，「別以為我沒注意到，妳的手在做什麼？」&lt;br&gt;&quot;,&quot;妳趁他不注意，親了他一下。&lt;br&gt;他睜開眼，「？……我沒在打瞌睡，別給偷親我找理由。」&lt;br&gt;&quot;].random()&gt;&gt;&lt;br&gt;
 $lovetalk
 &lt;br&gt;&lt;br&gt;
 妳歛回心神，專心上課。&lt;br&gt;
@@ -4759,7 +4719,7 @@ $lovetalk
 🚪[[繼續上課|上課]]
 
 
-</tw-passagedata><tw-passagedata pid="208" name="吃早餐" tags="nobr" position="1900,1075" size="100,100">&lt;&lt;set $fishfood += 1&gt;&gt;
+</tw-passagedata><tw-passagedata pid="207" name="吃早餐" tags="nobr" position="1900,1075" size="100,100">&lt;&lt;set $fishfood += 1&gt;&gt;
  妳走出房門，看到流浪者正在客廳看書，&lt;br&gt;
 而餐桌上擺著剛做好的熱騰騰早餐。&lt;br&gt;
 
@@ -4779,13 +4739,13 @@ $lovetalk
 &lt;br&gt;
 [[離開|塵歌壺]]
 
-</tw-passagedata><tw-passagedata pid="209" name="購衣7" tags="" position="3900,775" size="100,100">&lt;&lt;set $cloth6 += 1&gt;&gt;&lt;&lt;set $gold -=1000&gt;&gt;
+</tw-passagedata><tw-passagedata pid="208" name="購衣7" tags="" position="3900,775" size="100,100">&lt;&lt;set $cloth6 += 1&gt;&gt;&lt;&lt;set $gold -=1000&gt;&gt;
 &lt;img src=&quot;https://images.plurk.com/6xuwQxMZrk0NP5cfkpic5y.gif  &quot; &gt;
 
 買到了剛出的小貓斗篷！
 
 [[立刻穿上|服裝店][$touxiang to 5]]
-[[服裝店]]</tw-passagedata><tw-passagedata pid="210" name="更衣6" tags="" position="1575,1500" size="100,100">&lt;&lt;set  $touxiang to 5&gt;&gt;
+[[服裝店]]</tw-passagedata><tw-passagedata pid="209" name="更衣6" tags="" position="1575,1500" size="100,100">&lt;&lt;set  $touxiang to 5&gt;&gt;
 &lt;img src=&quot;https://images.plurk.com/6xuwQxMZrk0NP5cfkpic5y.gif &quot;&gt;
 
 
