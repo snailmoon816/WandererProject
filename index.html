@@ -1540,7 +1540,7 @@ $mcl:「身上錢不夠」 &lt;&lt;/if&gt;&gt;
 
 [[返回|$return]]
 
-</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,325" size="200,200">測試版：2025.03.29.1900</tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,325" size="200,200">測試版：2025.03.30.0852</tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
 &lt;b&gt;這是一個簡單功能的範本，我沒放多少東西，
 特殊片段：你不一定都要有，可以選擇使用
 StoryInit片段相當於一個預載入的資料庫
@@ -1574,9 +1574,14 @@ B站 熔岩泡芙
 0.1基礎介紹，特殊片段名，側邊屬性值，時間日期，帶頭像的對話方塊，修改變數，身體狀態widget，點擊文本顯示隱藏內容，圖片插入，隨機圖片，隨機視頻，隨機跳轉，簡單判斷寫法，禁止換行，標籤使用，判斷與變數結合顯示不同內容
 
 &lt;/b&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="99" name="背景圖widget" tags="widget noreturn nobr" position="2200,0" size="100,100">/*須彌城背景圖*/
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="99" name="背景圖widget" tags="widget noreturn nobr" position="2200,0" size="100,100">/*須彌城背景圖-日*/
 &lt;&lt;widget &quot;bg1Widget&quot;&gt;&gt;
 &lt;img src=&quot;https://images.plurk.com/6JT7Agjksvc2SOTOavb4Ko.png&quot; alt=&quot;替代文字&quot; width=100% &gt;
+&lt;&lt;/widget&gt;&gt;
+
+/*須彌城背景圖-夜*/
+&lt;&lt;widget &quot;bg1nWidget&quot;&gt;&gt;
+&lt;img src=&quot;https://images.plurk.com/P2QDvuDoCr8iDXv2OTDR8.png &quot; alt=&quot;替代文字&quot; width=100% &gt;
 &lt;&lt;/widget&gt;&gt;
 
 /*塵歌壺背景圖*/
@@ -2430,16 +2435,16 @@ $(document).on(&quot;keyup&quot;, function (e) {
 &lt;center&gt;💙[[遊戲繼續|ch01]]💛&lt;/center&gt;&lt;br&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;hr&gt;
-&lt;g1&gt;【遊玩前注意事項】&lt;/g1&gt;&lt;br&gt;
-。本作品為原神二創文字遊戲(CP：散熒)，&lt;y2&gt;熒=旅行者=玩家&lt;/y2&gt;，我流私設如山，如有不適請立刻關閉。&lt;br&gt;
-。劇情純屬為愛發電及發癲，嗑代隨意，含有R18內容，未成年者請勿遊玩，責任自負。&lt;br&gt;
-。&lt;r2&gt;請記得定時存檔+備份&lt;/r2&gt;，未經允許不得擅自二次發布或挪作他用，如需轉載請註明作者資訊：&lt;br&gt;
+&lt;g1&gt;【遊玩前務必閱讀以下須知】&lt;/g1&gt;&lt;br&gt;
+。本作品為原神二創文字遊戲(CP：散熒)，&lt;y2&gt;熒=旅行者=玩家&lt;/y2&gt;，嗑代隨意，如有不適請立刻關閉。&lt;br&gt;
+。劇情純屬為愛發電及發癲，我流私設如山，含有R18內容，未成年者請勿遊玩，責任自負。&lt;br&gt;
+。&lt;r2&gt;請記得定時存檔+備份&lt;/r2&gt;，未經允許不得擅自二次發布或挪作他用，如需轉載請註明作者資訊。&lt;br&gt;
 。作者：蝸牛月（lofter：立春與風、gsxiao99）&lt;br&gt;
 　&lt;a href=&quot;https://www.plurk.com/snailmoon&quot; target=&quot;_blank&quot;&gt;作者噗浪&lt;/a&gt;&lt;br&gt;
 　&lt;a href=&quot;https://forms.gle/5FbjZ5nsA2N7d8NGA&quot; target=&quot;_blank&quot;&gt;心得/bug回報表單&lt;/a&gt;&lt;br&gt;
 　聯絡信箱：snailmoon816@gmail.com&lt;br&gt;
 ▋流浪者夢工廠©2025 紋字雛型@蝸牛月&lt;br&gt;
-▋特別感謝：熔岩泡芙的twine模板/Degrees of Lewdity靈感發想/幫忙測試的朋友&lt;br&gt;
+▋特別感謝：熔岩泡芙的twine模板｜Degrees of Lewdity靈感啟發｜協助測試的親友群&lt;br&gt;
 ▋發布時間：2025.04.01｜最後更新：2025.04.01&lt;br&gt;
 &lt;hr&gt;
 &lt;&lt;set $password to &quot;0816&quot;&gt;&gt;
@@ -2480,7 +2485,9 @@ debug通道密碼：
 &lt;&lt;set $xingfen=0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="130" name="ch01" tags="nobr" position="1900,500" size="100,100">&lt;&lt;bg1Widget&gt;&gt;&lt;br&gt;
+</tw-passagedata><tw-passagedata pid="130" name="ch01" tags="nobr" position="1900,500" size="100,100">&lt;&lt;if $hour &gt;=6 &amp;&amp; $hour &lt;18&gt;&gt;&lt;&lt;bg1Widget&gt;&gt;&lt;&lt;else&gt;&gt;
+&lt;&lt;bg1nWidget&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;br&gt;
+
  &lt;&lt;if not State.variables[&quot;intro_&quot; + passage()]&gt;&gt;
   &lt;&lt;set State.variables[&quot;intro_&quot; + passage()] to true&gt;&gt;
   &lt;br&gt;
@@ -3464,13 +3471,13 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
 &lt;br&gt;
 流浪者躺在妳對面，&lt;g1&gt;已經恢復了少年的模樣&lt;/g1&gt;，他眸光清亮，嘴角噙著一抹笑，「&lt;r2&gt;這個遊戲&lt;/r2&gt;好玩嗎？」&lt;br&gt;
 &lt;br&gt;
-妳悄悄跟某位魔女交易、借用了她的魔法，造出這個特殊的廂庭世界－－用遊戲來稱呼，確實也沒錯。&lt;br&gt;
+妳悄悄跟某位魔女交易、借用了她的魔法，造出這個特殊的箱庭世界－－用遊戲來稱呼，確實也沒錯。&lt;br&gt;
 &lt;br&gt;
 就像那年夏天妳去過的水滴樂園，也是因為某人的願望加上魔女的權柄而創造出來的。&lt;br&gt;
 &lt;br&gt;
 「挺好玩的，不過還有很多需要改進的地方，例如好感跟認知提升時，應該要有個別的獨立對話，場景也應該要自己搭建，而不是用畫片偷懶……」&lt;br&gt;
 &lt;br&gt;
-這段意外插曲暫時畫下了句點，妳送給他的&lt;b2&gt;青色羽毛&lt;/b2&gt;擺在床頭櫃上。在原本的提瓦特中，好感度到了10就會停滯。但在這個廂庭世界裡，好感度沒有上限，還可以買下這根特殊羽毛來跟他表白。&lt;br&gt;
+這段意外插曲暫時畫下了句點，妳送給他的&lt;b2&gt;青色羽毛&lt;/b2&gt;擺在床頭櫃上。在原本的提瓦特中，好感度到了10就會停滯。但在這個箱庭世界裡，好感度沒有上限，還可以買下這根特殊羽毛來跟他表白。&lt;br&gt;
 &lt;br&gt;
 雖然笨拙簡陋，卻滿足了一部份對儀式感和回饋感的需求。&lt;br&gt;
 &lt;br&gt;
@@ -3507,7 +3514,15 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
     &lt;&lt;/script&gt;&gt;
 &lt;&lt;/button&gt;&gt;
 </tw-passagedata><tw-passagedata pid="150" name="雜貨店" tags="nobr noreturn" position="3500,1000" size="100,100">雜貨店架上有許多商品，目前商店等級&lt;o1&gt;$shoplevel級&lt;/o1&gt;。&lt;br&gt;
-目前持有&lt;o1&gt;$gold摩拉&lt;/o1&gt;。
+目前持有&lt;y2&gt;$gold摩拉&lt;/y2&gt;。 &lt;br&gt;
+ &lt;br&gt;
+&lt;&lt;link &quot;查看背包&quot;&gt;&gt;
+    &lt;&lt;script&gt;&gt;
+        Dialog.setup(&quot;🎒背包&quot;, &quot;menu-popup&quot;);
+        Dialog.wiki(Story.get(&quot;🎒背包&quot;).processText());
+        Dialog.open();
+    &lt;&lt;/script&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 &lt;&lt;if $shoplevel === 2&gt;&gt;
 &lt;&lt;else&gt;&gt;
@@ -3539,7 +3554,7 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
 &lt;td&gt;日落果&lt;/td&gt;
 &lt;td&gt;$50&lt;/td&gt;
 &lt;td&gt;$sunsetFruit個&lt;/td&gt;
-&lt;td&gt;&lt;&lt;if $gold &gt;= 50&gt;&gt;[[購買|購買日落果]]&lt;&lt;else&gt;&gt;摩拉不足&lt;&lt;/if&gt;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;&lt;if $gold &gt;=50&gt;&gt;[[購買|購買日落果]]&lt;&lt;else&gt;&gt;摩拉不足&lt;&lt;/if&gt;&gt;&lt;/td&gt;
     &lt;/tr&gt;
 
      &lt;tr&gt;
@@ -3682,14 +3697,16 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
 &lt;br&gt;
 [[返回書架|智慧宮]]</tw-passagedata><tw-passagedata pid="153" name="購買牛奶" tags="" position="3400,1300" size="100,100">&lt;&lt;set $milk+= 1&gt;&gt;&lt;&lt;set $gold -=100&gt;&gt;
 
-妳買了一瓶牛奶。
+妳買了一瓶牛奶，現在有$milk瓶。
 
 
+&lt;&lt;if $gold &gt;=100&gt;&gt;[[再買一瓶|購買牛奶]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="154" name="購買方糖" tags="" position="3500,1300" size="100,100">&lt;&lt;set $sugarCube+= 1&gt;&gt;&lt;&lt;set $gold -=150&gt;&gt;
 
-妳買了一瓶方糖。
+妳買了一瓶方糖，現在有$sugarCube瓶。
 
 
+&lt;&lt;if $gold &gt;=150&gt;&gt;[[再買一瓶|購買方糖]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]
 </tw-passagedata><tw-passagedata pid="155" name="製作飲料" tags="nobr" position="2900,950" size="100,100">妳跟流浪者穿上圍裙，準備開始製作飲料。 &lt;br&gt;
 為確保新鮮，今天沒有賣完的，隔天就會銷毀。 &lt;br&gt;
@@ -3909,14 +3926,15 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
 [[繼續|雜貨店]]
 </tw-passagedata><tw-passagedata pid="164" name="購買堇瓜" tags="" position="3400,1400" size="100,100">&lt;&lt;set $violetMelon+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一顆堇瓜。
+妳買了一顆堇瓜，現在有$violetMelon顆。
 
-
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一顆|購買堇瓜]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="165" name="購買沉玉仙茗" tags="" position="3500,1400" size="100,100">&lt;&lt;set $teaLeaves+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一份沉玉仙茗。
+妳買了一份沉玉仙茗，現在有$teaLeaves份。
 
 
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一份|購買沉玉仙茗]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="166" name="購買教科書" tags="" position="3400,1500" size="100,100">&lt;&lt;set $unifrom+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
 妳購買了一本教科書，似乎可以引起他的求學興趣。
@@ -3969,19 +3987,21 @@ $(document).on(&quot;:passagedisplay&quot;, function() {
 &lt;br&gt;
 🚪[[離開|寶商街]]</tw-passagedata><tw-passagedata pid="172" name="購買日落果" tags="" position="3600,1200" size="100,100">&lt;&lt;set $sunsetFruit+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一顆日落果。
+妳買了一顆日落果，現在有$sunsetFruit顆。
 
 
-[[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="173" name="購買樹莓" tags="" position="3500,1200" size="100,100">&lt;&lt;set $raspberry+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一顆|購買日落果]]&lt;&lt;/if&gt;&gt;
+[[返回|雜貨店]]</tw-passagedata><tw-passagedata pid="173" name="購買樹莓" tags="" position="3500,1200" size="100,100">&lt;&lt;set $raspberry+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一顆樹莓。
+妳買了一顆樹莓，現在有$raspberry顆。
 
-
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一顆|購買樹莓]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="174" name="購買薄荷" tags="" position="3400,1200" size="100,100">&lt;&lt;set $mint += 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一株薄荷。
+妳買了一株薄荷，現在有$mint株。
 
 
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一株|購買薄荷]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="175" name="占卜健康" tags="" position="3625,1000" size="100,100">&lt;&lt;set $love +=2&gt;&gt;&lt;&lt;set $memo +=10&gt;&gt;&lt;&lt;set $divination +=1&gt;&gt; &lt;&lt;set $gold -=100&gt;&gt;
 妳說道，「幫我占健康吧。」
 
@@ -4317,7 +4337,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 &lt;&lt;/button&gt;&gt;
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4332,7 +4352,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4347,7 +4367,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4362,7 +4382,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4377,7 +4397,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4389,24 +4409,24 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 [[結局5｜愚人|Ending5]] &lt;&lt;else&gt;&gt;未解鎖&lt;br&gt;結局E&lt;&lt;/if&gt;&gt;&lt;/td&gt;
        &lt;/tr&gt;
 &lt;/table&gt;</tw-passagedata><tw-passagedata pid="197" name="點擊寶箱" tags="nobr" position="1300,100" size="100,100">&lt;&lt;set $clickCount-=10&gt;&gt;&lt;&lt;set $chest +=1&gt;&gt;
-          &lt;&lt;set $randomNumber to random(4)&gt;&gt;          
+          &lt;&lt;set $randomNumber to random(5)&gt;&gt;          
           
           &lt;&lt;if $randomNumber is 0&gt;&gt;          
           &lt;&lt;set $gold +=1000&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
-          妳得到了1000摩拉。
+          寶箱中有1000摩拉，小貓期待得到妳的誇獎。
           &lt;&lt;/if&gt;&gt;
               
           &lt;&lt;if $randomNumber is 1&gt;&gt;
           &lt;&lt;set $gold +=500&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
-          妳得到了500摩拉。
+          寶箱中有500摩拉，小貓扒拉著妳的褲管。
           &lt;&lt;/if&gt;&gt;
           
           &lt;&lt;if $randomNumber is 2&gt;&gt;
           &lt;&lt;set $gold +=100&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
-          妳得到了100摩拉。
+          寶箱中有100摩拉，小貓來回蹭著妳的腿。
           &lt;&lt;/if&gt;&gt;
           
           &lt;&lt;if $randomNumber is 3&gt;&gt;
@@ -4418,7 +4438,14 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
          &lt;&lt;if $randomNumber is 4&gt;&gt;
           &lt;&lt;set $gold +=0&gt;&gt;
           &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
-          小貓在寶箱裡睡著了…偷吸一口。
+          小貓在寶箱裡睡到翻肚…偷偷吸一口好了。
+          &lt;&lt;/if&gt;&gt;
+          
+          &lt;&lt;if $randomNumber is 5&gt;&gt;
+          &lt;&lt;set $gold +=0&gt;&gt;
+          &lt;&lt;set $mint +=1&gt;&gt;
+          &lt;&lt;replace &quot;#goldDisplay&quot;&gt;&gt;$gold&lt;&lt;/replace&gt;&gt;
+          小貓給你帶了一株薄荷。
           &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="198" name="更衣1" tags="" position="1575,1000" size="100,100">&lt;&lt;set  $touxiang to 0&gt;&gt;
 
 換好衣服了。
@@ -4428,9 +4455,10 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 </tw-passagedata><tw-passagedata pid="199" name="購買嘟嘟蓮" tags="" position="3700,1200" size="100,100">&lt;&lt;set $duduLotus+= 1&gt;&gt;&lt;&lt;set $gold -=50&gt;&gt;
 
-妳買了一朵嘟嘟蓮。
+妳買了一朵嘟嘟蓮，現在有$duduLotus朵。
 
 
+&lt;&lt;if $gold &gt;=50&gt;&gt;[[再買一朵|購買嘟嘟蓮]]&lt;&lt;/if&gt;&gt;
 [[繼續|雜貨店]]</tw-passagedata><tw-passagedata pid="200" name="送羽毛" tags="nobr" position="2100,575" size="100,100">「這是什麼？」&lt;br&gt;
 「禮物。」&lt;br&gt;
 「……我生日還沒到吧。」&lt;br&gt;
@@ -4450,7 +4478,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 </tw-passagedata><tw-passagedata pid="201" name="Gallery" tags="" position="1500,600" size="100,100">&lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4465,7 +4493,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4480,7 +4508,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4495,7 +4523,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -4510,7 +4538,7 @@ ED5：好感90+認知90以上，持有小黃書(後續解鎖色色劇情)&lt;br&
 
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;th style=&quot;width: 75%;&quot;&gt;CG&lt;/th&gt;
+        &lt;th style=&quot;width: 75%;&quot;&gt;名稱&lt;/th&gt;
         &lt;th style=&quot;width: 25%;&quot;&gt;回顧結局&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
