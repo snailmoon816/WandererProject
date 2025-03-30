@@ -1540,7 +1540,7 @@ $mcl:「身上錢不夠」 &lt;&lt;/if&gt;&gt;
 
 [[返回|$return]]
 
-</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,325" size="200,200">測試版：2025.03.30.1511</tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+</tw-passagedata><tw-passagedata pid="97" name="StoryBanner" tags="" position="800,325" size="200,200">測試版：2025.03.30.1511 $closeed </tw-passagedata><tw-passagedata pid="98" name="寫在開頭" tags="" position="925,2825" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
 &lt;b&gt;這是一個簡單功能的範本，我沒放多少東西，
 特殊片段：你不一定都要有，可以選擇使用
 StoryInit片段相當於一個預載入的資料庫
@@ -2048,6 +2048,7 @@ B站 熔岩泡芙
 </tw-passagedata><tw-passagedata pid="122" name="筆記區" tags="" position="1700,0" size="100,100">&lt;g1&gt;(認知+)&lt;/g1&gt;&lt;r2&gt;(好感度+)&lt;/r2&gt;
 
 Twine專案的名稱不要亂改，會影響到上傳的存檔。
+if的變量判定一定要&gt;=，不能只有=，會直接變成開關
 
 &lt;&lt;speech &quot;流浪者&quot;&gt;&gt;(冷冷地看了你一眼)&lt;&lt;/speech&gt;&gt;
 &lt;&lt;type 100ms&gt;&gt;&lt;&lt;/type&gt;&gt;
@@ -2422,7 +2423,7 @@ $(document).on(&quot;keyup&quot;, function (e) {
 認知 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$memo&quot;&gt;&lt;/meter&gt; $memo&lt;br&gt; 
 好感 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$love&quot;&gt;&lt;/meter&gt; $love&lt;br&gt; 
 色色 &lt;meter min=&quot;0&quot; low=&quot;40&quot; high=&quot;90&quot; max=&quot;100&quot; @value=&quot;$xingfen&quot;&gt;&lt;/meter&gt; $xingfen&lt;br&gt;
-&lt;&lt;xinwidget&gt;&gt;$closeed </tw-passagedata><tw-passagedata pid="127" name="Start" tags="nobr" position="1600,200" size="200,200">&lt;img src=&quot;https://images.plurk.com/7B9SX4GSD2gevZuzGEhln2.png&quot;&gt;
+&lt;&lt;xinwidget&gt;&gt;</tw-passagedata><tw-passagedata pid="127" name="Start" tags="nobr" position="1600,200" size="200,200">&lt;img src=&quot;https://images.plurk.com/7B9SX4GSD2gevZuzGEhln2.png&quot;&gt;
 /*遊戲開始主頁不能標noreturn標籤，相關語法都會失效，如果返回失效，那就F5看看有沒有return跑出來記得要刪乾淨*/
 &lt;br&gt;
 &lt;&lt;if not State.variables[&quot;intro_&quot; + passage()]&gt;&gt;
